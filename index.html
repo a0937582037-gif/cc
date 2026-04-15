@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>數據驅動職涯：許旆慈的專業成長報告</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;700&family=Noto+Sans+TC:wght@300;400;500&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav class="navbar">
+    <div class="nav-brand">CAREER PORTFOLIO</div>
+    <ul class="nav-links">
+      <li><a href="#home" class="nav-link active" data-page="home">首頁入口</a></li>
+      <li><a href="#intro" class="nav-link" data-page="intro">自我介紹與規劃</a></li>
+      <li><a href="#data" class="nav-link" data-page="data">診斷數據中心</a></li>
+    </ul>
+    <div class="nav-sub">靜宜資管 2B｜411316395</div>
+  </nav>
+
+  <!-- ===== PAGE: HOME ===== -->
+  <section class="page active" id="home">
+    <div class="hero">
+      <div class="hero-text">
+        <p class="hero-tag">數據驅動職涯</p>
+        <h1 class="hero-title">
+          許旆慈的<br />專業成長報告
+        </h1>
+        <p class="hero-desc">
+          結合 UCAN 職能診斷與 104 職場視野，探索藝術創意與資管邏輯的完美交集。
+        </p>
+        <div class="hero-btns">
+          <button class="btn-primary" onclick="goPage('intro')">開始探索</button>
+          <button class="btn-outline" onclick="goPage('data')">查看數據</button>
+        </div>
+      </div>
+      <div class="hero-img-wrap">
+        <img src="me.png" alt="許旆慈" class="hero-img" onerror="this.style.display='none'" />
+        <div class="hero-badge">ARI<span>藝術・實用・研究</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PAGE: INTRO ===== -->
+  <section class="page" id="intro">
+    <div class="container">
+
+      <!-- About -->
+      <div class="section-header">
+        <h2>許旆慈 <span>Hsu Pei-Tzu</span></h2>
+      </div>
+      <div class="about-card">
+        <p>我是就讀<strong>靜宜大學資訊管理系</strong>的大學生，對資訊系統與科技應用充滿熱忱。透過 UCAN 職涯測驗，確認自己具備 <strong>ARI（藝術型・實用型・研究型）</strong>的職業人格特質，擅長結合創意思維與邏輯分析。</p>
+        <p>在專業職能方面，系統分析與技術文件撰寫是我的相對優勢；在職場共通職能上，人際互動與創新思維得分較高，也清楚認識到自己在溝通表達、持續學習與團隊合作方面仍有提升空間，並擬定具體的成長計畫。</p>
+      </div>
+
+      <!-- Holland Code 卡片 -->
+      <div class="section-header mt-40">
+        <h3>🧭 Holland Code 職業性格</h3>
+      </div>
+      <div class="holland-cards">
+        <div class="holland-card art">
+          <div class="holland-letter">A</div>
+          <div class="holland-label">藝術型</div>
+          <div class="holland-score">5分 / PR63</div>
+          <p>直覺敏銳・善於表達・創意創作</p>
+        </div>
+        <div class="holland-card real">
+          <div class="holland-letter">R</div>
+          <div class="holland-label">實用型</div>
+          <div class="holland-score">5分 / PR61</div>
+          <p>動手操作・具體成果・技術實踐</p>
+        </div>
+        <div class="holland-card inv">
+          <div class="holland-letter">I</div>
+          <div class="holland-label">研究型</div>
+          <div class="holland-score">4分 / PR47</div>
+          <p>分析推理・追根究柢・邏輯思維</p>
+        </div>
+      </div>
+      <div class="ari-desc">
+        藝術型偏好運用創意表達；實用型強調動手操作、講求具體成果；研究型善於分析推理、追根究柢。三者結合，適合需要創意思維 × 技術實踐 × 邏輯分析的 MIS 工作。
+      </div>
+
+      <!-- 未來職涯規劃 -->
+      <div class="section-header mt-40">
+        <h3>🎯 未來職涯規劃：年薪百萬目標</h3>
+      </div>
+      <div class="career-cards">
+        <!-- 室內設計師 -->
+        <div class="career-card">
+          <div class="career-badge">理想職業 A</div>
+          <h4>室內設計師</h4>
+          <div class="career-salary">面議（預期 80萬+）</div>
+          <div class="career-company">創意空間規劃工作室</div>
+          <div class="career-tags">
+            <span>創意構想</span>
+            <span>成本估算</span>
+            <span>周休二日</span>
+          </div>
+          <p class="career-story">
+            <strong>職涯故事：</strong>發揮富有想像力且有責任心的個性。利用資管背景進行成本精算，將藝術美感與實務邏輯結合。
+          </p>
+          <a class="btn-104" href="https://www.104.com.tw/jobs/search/?keyword=%E5%AE%A4%E5%85%A7%E8%A8%AD%E8%A8%88%E5%B8%AB&area=6001008000&jobsource=n104bank2" target="_blank" rel="noopener">
+            🔗 查看 104 室內設計師職缺
+          </a>
+        </div>
+
+        <!-- 專案經理 -->
+        <div class="career-card">
+          <div class="career-badge">理想職業 B</div>
+          <h4>MIS 資訊管理師</h4>
+          <div class="career-salary">年薪 60 ~ 100萬</div>
+          <div class="career-company">資訊系統開發集團</div>
+          <div class="career-tags">
+            <span>系統分析</span>
+            <span>技術文件</span>
+            <span>績效獎金</span>
+          </div>
+          <p class="career-story">
+            <strong>職涯故事：</strong>運用專業職能中「產品維護與客戶支援」的優勢，結合 ARI 嚴謹的研究特質，達成高效資訊管理。
+          </p>
+          <a class="btn-104" href="https://www.104.com.tw/jobs/search/?keyword=MIS%E8%B3%87%E8%A8%8A%E7%AE%A1%E7%90%86&area=6001008000&jobsource=n104bank2" target="_blank" rel="noopener">
+            🔗 查看 104 MIS 相關職缺
+          </a>
+        </div>
+      </div>
+
+      <!-- 未來充實計畫 -->
+      <div class="section-header mt-40">
+        <h3>📋 未來充實計畫</h3>
+      </div>
+      <div class="plan-cards">
+        <div class="plan-card">
+          <div class="plan-icon">📚</div>
+          <div class="plan-type">短期課程規劃</div>
+          <div class="plan-title">加強 SQL 與資料庫管理能力</div>
+          <p>透過線上課程（如 Coursera、Udemy）系統學習 MySQL/PostgreSQL，並實作資料庫設計專案，加強 MIS 職務所需的核心技術能力。</p>
+        </div>
+        <div class="plan-card">
+          <div class="plan-icon">🤝</div>
+          <div class="plan-type">社團參與</div>
+          <div class="plan-title">加入資訊管理相關社團或競賽</div>
+          <p>參與校內外黑客松、資訊應用競賽或系學會，鍛鍊團隊合作與溝通表達能力，並累積實際專案經驗填充履歷。</p>
+        </div>
+        <div class="plan-card">
+          <div class="plan-icon">💼</div>
+          <div class="plan-type">實習計畫</div>
+          <div class="plan-title">尋找 MIS / IT Help Desk 相關實習</div>
+          <p>於大三下或大四到企業進行資訊部門實習，實際體驗 MIS 工作內容，應用課堂所學並探索不同產業的資訊管理需求。</p>
+        </div>
+        <div class="plan-card">
+          <div class="plan-icon">🏆</div>
+          <div class="plan-type">證照考取</div>
+          <div class="plan-title">規劃取得相關資訊證照</div>
+          <p>目標取得 MOS（微軟辦公軟體）、TQC+ 資訊管理或 CompTIA ITF+ 等基礎資訊證照，強化求職競爭力。</p>
+        </div>
+      </div>
+
+      <!-- 相關連結 -->
+      <div class="section-header mt-40">
+        <h3>🔗 診斷結果相關連結</h3>
+      </div>
+      <div class="link-row">
+        <a href="https://ucan.moe.edu.tw/" target="_blank" class="link-chip">UCAN 官方報告</a>
+        <a href="https://vercel.com/a0937582037-gifs-projects" target="_blank" class="link-chip">Vercel 專案首頁</a>
+        <a href="https://www.104.com.tw/jobs/search/?keyword=MIS&area=6001008000" target="_blank" class="link-chip">104 職缺搜尋</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== PAGE: DATA ===== -->
+  <section class="page" id="data">
+    <div class="container">
+
+      <div class="section-header">
+        <h2>診斷數據中心</h2>
+        <p class="section-sub">UCAN 職業興趣探索 × 專業職能診斷 × 職場共通職能</p>
+      </div>
+
+      <!-- Holland Code 診斷卡 (圖5風格) -->
+      <div class="diag-row">
+        <!-- 左：Holland Code -->
+        <div class="diag-card holland-diag">
+          <div class="diag-label">職業性格代碼・HOLLAND CODE</div>
+          <h3 class="diag-title-big">ARI 藝術・實用・研究</h3>
+          <div class="holland-letters-row">
+            <div class="hl-box art-box">A</div>
+            <div class="hl-box real-box">R</div>
+            <div class="hl-box inv-box">I</div>
+          </div>
+          <p class="diag-desc">藝術型偏好運用創意表達；實用型強調動手操作、講求具體成果；研究型善於分析推理、追根究柢。三者結合，適合需要創意思維 × 技術實踐 × 邏輯分析的 MIS 工作。</p>
+          <div class="holland-tags-row">
+            <span class="htag">藝術型 5分 / PR63</span>
+            <span class="htag">實用型 5分 / PR61</span>
+            <span class="htag">研究型 4分 / PR47</span>
+          </div>
+        </div>
+
+        <!-- 右：專業職能 -->
+        <div class="diag-card skill-diag">
+          <div class="diag-label">專業職能診斷・軟體開發及程式設計</div>
+          <h3 class="diag-title-big">整體平均 <span class="highlight-score">3.14</span>分</h3>
+          <div class="skill-bars" id="skillBars">
+            <!-- JS 動態生成 -->
+          </div>
+        </div>
+      </div>
+
+      <!-- 職業興趣 16職涯雷達圖 -->
+      <div class="chart-section">
+        <h3 class="chart-title">🎯 職業興趣強度（16 職涯類型）</h3>
+        <div class="chart-wrap">
+          <canvas id="radarChart"></canvas>
+        </div>
+      </div>
+
+      <!-- 專業職能長條圖 -->
+      <div class="chart-section">
+        <h3 class="chart-title">📊 專業職能診斷剖面（軟體開發及程式設計）</h3>
+        <div class="chart-wrap chart-bar-wrap">
+          <canvas id="barChart"></canvas>
+        </div>
+      </div>
+
+      <!-- 共通職能蜘蛛圖 -->
+      <div class="chart-section">
+        <h3 class="chart-title">🔷 職場共通職能雷達圖</h3>
+        <div class="chart-wrap">
+          <canvas id="commonRadar"></canvas>
+        </div>
+      </div>
+
+      <!-- 共通職能分數卡 -->
+      <div class="section-header mt-40">
+        <h3>🧩 職場共通職能詳細分數</h3>
+      </div>
+      <div class="common-grid" id="commonGrid">
+        <!-- JS 動態生成 -->
+      </div>
+
+      <!-- 互動測驗 -->
+      <div class="section-header mt-40">
+        <h3>💡 與我的能力比一比</h3>
+      </div>
+      <div class="quiz-card">
+        <p class="quiz-desc">選擇一項共通職能，看看我的分數落點與說明</p>
+        <div class="quiz-btns" id="quizBtns">
+          <!-- JS 動態生成 -->
+        </div>
+        <div class="quiz-result" id="quizResult"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    許旆慈｜411316395｜2026 Career Portfolio
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
